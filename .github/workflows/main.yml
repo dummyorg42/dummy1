@@ -12,7 +12,7 @@ jobs:
       - run: echo "bump" >> README.md
       - run: git config user.email thibault.duponchelle@gmail.com
       - run: git config user.name "Thibault DUPONCHELLE"
-      - run: git commit -m "Bump!"
+      - run: git commit -m "Bump!" README.md
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
